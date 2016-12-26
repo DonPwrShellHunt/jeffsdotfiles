@@ -60,9 +60,9 @@ if [ -f $brew_prefix/etc/bash_completion ]; then
   . $brew_prefix/etc/bash_completion
 fi
 
-# Use nvm.
-export NVM_DIR="$HOME/.nvm"
-. "$brew_prefix/opt/nvm/nvm.sh"
+# Use nvm. Can uncomment once nvm usage is clear
+# export NVM_DIR="$HOME/.nvm"
+# . "$brew_prefix/opt/nvm/nvm.sh"
 
 # Vagrant configuration.
 # export VAGRANT_DEFAULT_PROVIDER='virtualbox'
