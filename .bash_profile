@@ -60,6 +60,10 @@ if [ -f $brew_prefix/etc/bash_completion ]; then
   . $brew_prefix/etc/bash_completion
 fi
 
+# configure virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME="/home/huntd/virtualenvs"
+
 # Use nvm. Can uncomment once nvm usage is clear
 # export NVM_DIR="$HOME/.nvm"
 # . "$brew_prefix/opt/nvm/nvm.sh"
