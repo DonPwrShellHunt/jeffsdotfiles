@@ -61,8 +61,10 @@ if [ -f $brew_prefix/etc/bash_completion ]; then
 fi
 
 # configure virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
+export WORKON_HOME="/Users/donhunt/virtualenvs"
+export PROJECT_HOME="/Users/donhunt/Code/mypy"
 source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME="/home/huntd/virtualenvs"
 
 # Use nvm. Can uncomment once nvm usage is clear
 # export NVM_DIR="$HOME/.nvm"
