@@ -86,3 +86,5 @@ knownrm() {
   fi
 }
 
+
+export PATH="$HOME/.cargo/bin:$HOME/.dotnet:$PATH"
