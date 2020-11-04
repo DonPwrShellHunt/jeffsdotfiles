@@ -13,8 +13,8 @@ export PS1="\[\e[0;32m\]\]\[\] \[\e[1;32m\]\]\t \[\e[0;2m\]\]\w \[\e[0m\]\]\[
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# Custom $PATH with extra locations.
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# Custom $PATH with extra locations. Duplicates noted - remove for now
+# export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Include alias file (if present) containing aliases for ssh, etc.
 if [ -f ~/.bash_aliases ]
@@ -61,7 +61,8 @@ if [ -f $brew_prefix/etc/bash_completion ]; then
 fi
 
 # configure virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export WORKON_HOME="/Users/donhunt/virtualenvs"
 export PROJECT_HOME="/Users/donhunt/Code/mypy"
 source /usr/local/bin/virtualenvwrapper.sh
