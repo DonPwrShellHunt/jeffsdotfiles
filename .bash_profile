@@ -89,3 +89,4 @@ knownrm() {
 
 
 export PATH="$HOME/.cargo/bin:$PATH"
+eval "$(oh-my-posh --init --shell bash --config /usr/local/opt/oh-my-posh/themes/jandedobbeleer.omp.json)"
